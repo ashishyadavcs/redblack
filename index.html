@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./public/css/main.css">
+</head>
+
+<body>
+<div class="divnum">
+
+</div>
+    <header>
+        <h1>Theme</h1>
+    </header>
+    <nav>
+
+    </nav>
+    <main>
+        <h1>
+            Ashish kumar,
+        </h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam odit harum reprehenderit id modi aliquam
+            sapiente perferendis optio atque fugit. Eum sed quae placeat quis totam nihil numquam hic. Doloribus.</p>
+
+
+        <div class="items">
+
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+        </div>
+
+
+
+
+
+    </main>
+
+    <footer>
+        <p>copyright &copy; 2021</p>
+    </footer>
+
+</body>
+<script>
+    function createDiv() {
+        for (i = 0; i <5; i++) {
+            document.querySelector('main .items').innerHTML += '<div class="item"></div>'
+        }
+        repeat();
+
+    }
+   function repeat(){
+    setTimeout(createDiv,2000)
+    var divNumber=document.getElementsByClassName('item').length;
+console.log('total div:'+divNumber);
+document.querySelector('.divnum').innerHTML=divNumber
+   }
+    
+   repeat();
+
+
+
+</script>
+
+</html>
