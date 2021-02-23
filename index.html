@@ -46,14 +46,14 @@
 </body>
 <script>
     function createDiv() {
-        for (i = 0; i <5; i++) {
+        for (i = 0; i <300; i++) {
             document.querySelector('main .items').innerHTML += '<div class="item"></div>'
         }
         repeat();
 
     }
    function repeat(){
-    setTimeout(createDiv,2000)
+    setTimeout(createDiv,600)
     var divNumber=document.getElementsByClassName('item').length;
 console.log('total div:'+divNumber);
 document.querySelector('.divnum').innerHTML=divNumber
