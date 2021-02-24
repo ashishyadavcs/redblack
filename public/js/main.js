@@ -11,6 +11,7 @@ for (image of images) {
   playAudio();
 }
 document.querySelector('button').click();
+document.querySelector('.divnum').innerHTML="quote"
 
 function playAudio() {
   var song = new Audio();
