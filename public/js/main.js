@@ -11,7 +11,7 @@ for (image of images) {
   playAudio();
 }
 document.querySelector('button').click();
-document.querySelector('.divnum').innerHTML="quote"
+document.querySelector('.divnum').innerHTML="stop"
 
 function playAudio() {
   var song = new Audio();
@@ -19,7 +19,15 @@ function playAudio() {
   song.play();
   setInterval(function(){
    song.src='./public/sound/mixkit-classic-alarm-995.wav';
-  song.play();
+   song.play();
+   setInterval(function(){
+song.src='./public/sound/mixkit-arcade-fast-game-over-233.wav';
+song.play();
+   },2000)
+  
 
   },2000)
+}
+function stopS(){
+Audio.stop();
 }
