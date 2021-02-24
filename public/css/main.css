@@ -10,6 +10,7 @@ header{
 html{
     background:rgb(214, 180, 180);
 }
+img{max-width: 100%;}
 *{
     margin:0;
     padding: 0;
@@ -57,6 +58,9 @@ button{
     bottom: 0;
     left: 0;
     width: 100%;
+    border: none;
+    outline: none;
+    font-size: 20px;
 }
     
 }
@@ -129,6 +133,7 @@ form{
 .info{
     margin: 10px 0px;
     padding: 10px;
+    text-align: center;
 }
 input{
     padding: 20px;
