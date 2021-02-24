@@ -52,6 +52,12 @@ main{
     main{
         padding: 20px 0;
     }
+button{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
     
 }
 .items .item{
@@ -70,7 +76,7 @@ main{
 
 }
 button{
-    padding: 10px 20px;
+    padding: 20px 30px;
     background: red;
     color: #fff;
 }
