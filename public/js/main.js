@@ -37,7 +37,11 @@ function playAudio() {
       song.play();
     }, 2000);
   }, 2000);
+  setInterval(function(){
+      song.src="./public/sound/bomb.wav";
+      song.play();
+  },2000)
 }
 function stopS() {
-  Audio.stop();
+  song.stop();
 }
