@@ -16,4 +16,9 @@ function playAudio() {
   var song = new Audio();
   song.src = "./public/sound/mixkit-aggressive-beast-roar-13.wav";
   song.play();
+  setInterval(function(){
+   song.src='./public/sound/mixkit-classic-alarm-995.wav';
+  song.play();
+
+  },2000)
 }
